@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url(/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    margin: 0px 80px;
+    min-height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.navbar {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    width: 50px;
+    font-size: 30px;
+}
+
+i {
+    width: 25px;
+    font-size: 18px;
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+    font-size: 18px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 30px;
+}
+
+nav ul li a:hover {
+   color: green;
+}
+
+.row {
+    margin: 100px 0px;
+}
+
+.col-1 {
+    width: 50%;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+
+small {
+    color: white;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+button {
+    width: 130px;
+    height: 50px;
+    padding: 10px 5px;
+    border-radius: 6px;
+    border: 0;
+    font-weight: bolder;
+    background-color: rgb(29, 216, 144);
+    color: white;
+    transition: width 0.5s;
+}
+
+button i {
+    display: none;
+}
+
+button:hover i {
+    display: block;
+}    
+
+button:hover {
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.social i {
+    padding: 10px 20px;
+    font-size: 30px;
+    display: inline;
+}
+
+@media only screen and (max-width: 600px){
+    .container {
+        margin: 0px 20px;
+    }
+
+    h2 {
+        width: 100px;
+    }
+
+    i {
+        display: block;
+        margin-left: auto;
+    }
+
+    .col-1 {
+        width: 100%;
+    }
+
+    
+    button:hover {
+        width: 140px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .row {
+        margin-top: 50px;
+        margin-bottom: 10px;
+        
+    }
+
+    .social {
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .social i{
+        margin: 0;
+        font-size: 24px;
+    }
+
+    nav ul {
+        width: 100%;
+        background-color: lightskyblue;
+        position: absolute;
+        top: 85px;
+        left: 0px;
+        z-index: 2;
+        display: none;
+        
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    a {
+        color: white;
+    }
+}

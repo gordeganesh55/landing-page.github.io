@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h2>LOGO</h2>
+
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Info</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <i class="bi-list" onclick="myFunction()"></i>
+
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h1>LIKE NATURE <br> <small>BE CREATIVE!</small></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit excepturi iusto natus sapiente eius aliquid repellendus dicta autem aperiam laboriosam. Aliquid vero et similique laboriosam recusandae saepe non ipsum facere rem? Rerum sunt dolore id autem labore omnis ad! Voluptatum praesentium cum placeat possimus in ipsam veritatis veniam nesciunt perspiciatis quisquam, distinctio nemo provident consectetur facilis earum, molestiae suscipit. Explicabo!</p>
+                <button type="button">MORE INFO  <i class="bi-arrow-right"></i></button>
+            </div>
+            <br> <br>
+        </div>
+
+        <div class="social">
+                <i class="bi-facebook"></i>
+                <i class="bi-twitter"></i>
+                <i class="bi-instagram"></i>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            if (document.getElementById('menuList').style.display === 'none') {
+                document.getElementById('menuList').style.display = 'block';
+            } else {
+                document.getElementById('menuList').style.display = 'none';
+            }
+        }
+    </script>
+    
+</body>
+</html>
